@@ -4,67 +4,67 @@ const projects = [
     title: "Qarar",
     tags: ["Laravel 12", "Passport", "Reverb", "MyFatoorah"],
     desc: "Full-stack Laravel 12 healthcare booking platform with a multilingual admin dashboard and REST API. Dynamic role & permission system, charity committee workflows, video/voice consultations, MyFatoorah payments, and real-time chat via Laravel Reverb.",
-    link: "#"
+    link: "https://qarar.nahrdev.com/"
   },
   {
     title: "Rawnq",
     tags: ["Laravel", "Vue.js 3", "Multi-tenant", "Wallet"],
     desc: "Multi-vendor beauty services marketplace with 35+ independent modules. Wallet system, granular RBAC, multi-language/currency support, real-time scheduling, and multi-gateway payments (Stripe, PayPal, Razorpay, Kashier).",
-    link: "#"
+    link: "https://rawnq.nahrdev.com/"
   },
   {
     title: "KUBA",
     tags: ["Laravel", "Repository Pattern", "Bilingual CMS"],
     desc: "Delivery company website with a fully dynamic admin dashboard driving all front-end content. 18+ CRUD modules, bilingual JSON-based translatable fields, and auto-generated per-action permissions.",
-    link: "#"
+    link: "https://kuba.nahrdev.com/"
   },
   {
     title: "Book Iraq",
     tags: ["Laravel", "Vue.js", "Cron Jobs", "Payments"],
     desc: "Travel and tourism booking platform for hotels, flights, cars, taxis and attractions. Multi-language support, secure payments (Visa/PayPal/Apple Pay/Google Pay), and automated booking-expiration cron jobs.",
-    link: "#"
+    link: "https://booking.nahrdev.com/"
   },
   {
     title: "Trimly",
     tags: ["Laravel", "WebSockets", "Multi-app"],
     desc: "Beauty services marketplace with a responsive website and two mobile apps (User & Freelancer). Real-time notifications, freelancer wallet system, subscription management, and a revenue analytics dashboard.",
-    link: "#"
+    link: "https://trimlydev.nahrdev.com/"
   },
   {
     title: "MoveNow",
     tags: ["Laravel", "Stripe", "WebSockets", "Firebase"],
     desc: "Ride-sharing and delivery platform with a REST API for two mobile apps (User & Provider). Real-time trip management via WebSockets, Stripe payments, and provider onboarding with document verification.",
-    link: "#"
+    link: "https://movenow.nahrdev.com/"
   },
   {
     title: "Motah",
     tags: ["Laravel", "Firebase", "Real-time Tracking"],
     desc: "Real-time service booking platform with two mobile apps and an admin dashboard. Live worker tracking, promo codes, reward points, custom fields for team requests, and mutual user/worker ratings.",
-    link: "#"
+    link: "https://motah.nahrdev.com/"
   },
   {
     title: "Iplace24",
     tags: ["Laravel", "MySQL", "AJAX"],
     desc: "Car maintenance platform with a web dashboard and two mobile apps (User & Vendor). Nearest service-station discovery, car rental during repair time, remote key drop-off, and secure payments.",
-    link: "#"
+    link: "https://Iplace24.nahrdev.com/"
   },
   {
     title: "Nesba",
     tags: ["Laravel", "MySQL", "CRUD"],
     desc: "Educational platform for managing courses and student enrollments — admins create, update and delete courses while tracking student enrollment data.",
-    link: "#"
+    link: "https://Nesba.nahrdev.com/"
   },
   {
     title: "Wawan GYM",
     tags: ["CakePHP", "MySQL", "AJAX"],
     desc: "Gym management dashboard for subscriptions, memberships, coaches, branches and activities, paired with a mobile app offering dynamic, PDF-exportable meal and workout plans for users and coaches.",
-    link: "#"
+    link: null
   },
   {
     title: "HYDRO",
     tags: ["Laravel", "Repository Pattern", "AJAX"],
     desc: "Corporate website for an Egyptian aluminum manufacturer exporting to 40+ countries. Custom admin dashboard with full CRUD over all site content, multilingual system, and dynamic media management.",
-    link: "#"
+    link: "https://hydro-metal.org/"
   }
 ];
 
@@ -85,7 +85,7 @@ function renderProjects(filter) {
       <h3>${p.title}</h3>
       <p>${p.desc}</p>
       <div class="project-tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
-      <a class="project-link" href="${p.link}" target="_blank" rel="noopener">View Project →</a>
+      ${p.link ? `<a class="project-link" href="${p.link}" target="_blank" rel="noopener">View Project →</a>` : ""}
     `;
     projectsGrid.appendChild(card);
   });
