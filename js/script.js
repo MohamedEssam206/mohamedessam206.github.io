@@ -138,8 +138,7 @@ const translations = {
     contact_text: "Open to full-stack / backend opportunities with Laravel & Vue.js and interesting collaborations. Feel free to reach out.",
     footer_copy: "©",
     footer_text: "Mohamed Essam. Built with HTML, CSS & vanilla JS.",
-    view_project: "View Project →",
-    lang_toggle_label: "العربية"
+    view_project: "View Project →"
   },
   ar: {
     nav_home: "الرئيسية", nav_about: "نبذة عني", nav_services: "الخدمات", nav_experience: "الخبرة",
@@ -232,7 +231,7 @@ function applyLanguage(lang) {
     if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
   });
 
-  document.getElementById("langToggle").textContent = dict.lang_toggle_label;
+  document.getElementById("langSelect").value = lang;
 
   renderProjects(currentActiveFilter);
 
@@ -292,9 +291,9 @@ function buildFilters() {
 
 buildFilters();
 
-// ---- Language toggle ----
-document.getElementById("langToggle").addEventListener("click", () => {
-  applyLanguage(currentLang === "en" ? "ar" : "en");
+// ---- Language dropdown ----
+document.getElementById("langSelect").addEventListener("change", (e) => {
+  applyLanguage(e.target.value);
 });
 
 // ---- Mobile nav toggle ----
