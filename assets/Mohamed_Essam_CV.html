@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Essam - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 44px 56px;
+            background: #fff;
+        }
+        h1 {
+            font-size: 26pt;
+            font-weight: 700;
+            text-align: center;
+            color: #0f172a;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #475569;
+            font-size: 12pt;
+            margin: 5px 0 10px;
+            font-weight: 500;
+        }
+        .contact {
+            text-align: center;
+            font-size: 10pt;
+            color: #334155;
+            margin-bottom: 20px;
+        }
+        .contact a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .contact a:hover { text-decoration: underline; }
+        .divider {
+            border: none;
+            border-top: 2px solid #0f172a;
+            margin: 6px 0 10px;
+        }
+        h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #0f172a;
+            margin-bottom: 2px;
+        }
+        h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .section { margin-bottom: 18px; }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .date {
+            color: #64748b;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .location {
+            color: #64748b;
+            font-size: 10pt;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li { margin-bottom: 4px; }
+        p.summary-text {
+            margin-top: 6px;
+            color: #1e293b;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6px;
+        }
+        .skills-table td {
+            padding: 3px 6px 3px 0;
+            vertical-align: top;
+        }
+        .skills-table td:first-child {
+            font-weight: 700;
+            white-space: nowrap;
+            width: 110px;
+            color: #0f172a;
+        }
+        .project-tech {
+            font-size: 9.5pt;
+            color: #475569;
+            font-style: italic;
+            margin: 3px 0 4px;
+        }
+        .project-block { margin-bottom: 14px; }
+        @media print {
+            body { padding: 20px 32px; }
+            a { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <h1>Mohamed Essam</h1>
+    <div class="subtitle">Backend Software Engineer &nbsp;|&nbsp; PHP · Laravel · Vue.js</div>
+    <div class="contact">
+        Cairo, Egypt &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="mailto:mohammedessam2062000@gmail.com">mohammedessam2062000@gmail.com</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        +20 106 428 6942
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://github.com/MohamedEssam206" target="_blank">GitHub</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/mohammed-essam-473993244/" target="_blank">LinkedIn</a>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <h2>Summary</h2>
+        <hr class="divider">
+        <p class="summary-text">
+            Backend-focused Software Engineer with 2+ years of hands-on experience building and deploying
+            production-grade web applications using PHP and Laravel. Proficient in designing scalable RESTful APIs,
+            optimizing MySQL database schemas, and implementing real-time features via WebSockets and Firebase.
+            Experienced in full-stack delivery with Vue.js, multi-language platforms, payment gateway integrations
+            (Stripe, PayPal, Visa), and clean-code architectural patterns including Repository Pattern and Service Layers.
+        </p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <h2>Experience</h2>
+        <hr class="divider">
+        <div class="row">
+            <h3>Software Engineer &mdash; Nahr Development Software &amp; Marketing Co.</h3>
+            <span class="date">June 2024 &ndash; Present &nbsp;|&nbsp; Remote</span>
+        </div>
+        <ul>
+            <li>Built and maintained production REST APIs for booking and service platforms serving real end-users across multiple countries.</li>
+            <li>Designed and optimized MySQL database schemas, applying indexing and query restructuring to improve performance on high-traffic endpoints.</li>
+            <li>Integrated third-party services including Stripe, PayPal, Visa, Apple Pay, Google Pay, Firebase push notifications, and Twilio SMS.</li>
+            <li>Implemented real-time features using Laravel Broadcasting (WebSockets) for live trip tracking, in-app chat, and instant booking updates.</li>
+            <li>Applied Repository Pattern and Service Layer architecture across 5+ production projects, ensuring maintainability and testability.</li>
+            <li>Delivered multi-language (Arabic/English) interfaces and dynamic media management systems for content-heavy platforms.</li>
+        </ul>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <hr class="divider">
+        <table class="skills-table">
+            <tr>
+                <td>Back-End</td>
+                <td>PHP, Laravel, MySQL, RESTful APIs, MVC, Queue Workers, WebSockets (Broadcasting), Cron Jobs, Repository Pattern, CakePHP, CodeIgniter</td>
+            </tr>
+            <tr>
+                <td>Front-End</td>
+                <td>Vue.js, JavaScript, HTML5, CSS3, Bootstrap, Tailwind CSS, AJAX</td>
+            </tr>
+            <tr>
+                <td>Integrations</td>
+                <td>Stripe, PayPal, Visa, Apple Pay, Google Pay, Firebase, Twilio, Wasabi, RabbitMQ</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td>Git, GitHub, Composer, Postman, Apache</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>Projects</h2>
+        <hr class="divider">
+
+        <div class="project-block">
+            <div class="row">
+                <h3>Book Iraq &mdash; Travel &amp; Tourism Booking Platform</h3>
+            </div>
+            <p class="project-tech">PHP · Laravel · MySQL · Vue.js · AJAX · WebSockets · Firebase</p>
+            <ul>
+                <li>Built a multi-service booking platform supporting hotels, flights, taxis, cars, and tourist attractions.</li>
+                <li>Integrated multi-payment support (Visa, PayPal, Apple Pay, Google Pay) and automated Cron Jobs for booking expiration management.</li>
+                <li>Delivered multi-language support (Arabic/English), real-time Firebase notifications, and a complete user profile and in-app chat system.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>Trimly &mdash; Beauty Services Marketplace</h3>
+            <p class="project-tech">Laravel (Modular Architecture) · Vue.js · MySQL · WebSockets</p>
+            <ul>
+                <li>Developed a marketplace connecting users with beauty freelancers via a web app and two mobile apps (User &amp; Freelancer).</li>
+                <li>Built a freelancer wallet system, real-time scheduling, subscription management, and role-based permissions.</li>
+                <li>Implemented a performance analytics dashboard showing revenue, sales commissions, and booking metrics.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>MoveNow &mdash; Ride-Sharing &amp; Delivery Platform</h3>
+            <p class="project-tech">Laravel · MySQL · Bootstrap · AJAX · WebSockets · Firebase · Stripe</p>
+            <ul>
+                <li>Built REST APIs for two mobile apps (User &amp; Provider) backed by a full admin dashboard for system management.</li>
+                <li>Implemented real-time trip management via WebSockets and Firebase notifications for live booking updates.</li>
+                <li>Designed provider onboarding with document verification workflows and Stripe wallet/billing integration.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>Motah &mdash; Real-Time On-Demand Service Platform</h3>
+            <p class="project-tech">Laravel · MySQL · AJAX · WebSockets · Firebase</p>
+            <ul>
+                <li>Built a platform with real-time worker tracking, promo codes, reward points, and automated invoice generation.</li>
+                <li>Delivered two mobile apps (User &amp; Worker) and a full-control admin dashboard following clean code principles.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>Iplace24 &mdash; Car Maintenance Platform</h3>
+            <p class="project-tech">Laravel · MySQL · JavaScript · Bootstrap · AJAX</p>
+            <ul>
+                <li>Built a geo-based platform connecting car owners with nearest service stations for repairs, oil changes, and car washes.</li>
+                <li>Implemented car rental during repair time and remote key drop-off request features.</li>
+            </ul>
+        </div>
+
+        <div class="project-block">
+            <h3>HydroMetal &mdash; Corporate Full-Stack Website</h3>
+            <p class="project-tech">Laravel · MySQL · AJAX · PHP · Blade</p>
+            <ul>
+                <li>Developed a multilingual (Arabic/English) corporate website for an aluminum manufacturer exporting to 40+ countries.</li>
+                <li>Built a custom admin dashboard with full CRUD using Repository Pattern and modular architecture for scalable content management.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <h2>Education</h2>
+        <hr class="divider">
+        <div class="row">
+            <h3>Bachelor of Computer Science</h3>
+            <span class="date">2023</span>
+        </div>
+        <p class="location">Higher Technological Institute, 10th of Ramadan City</p>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+        <h2>Courses &amp; Certifications</h2>
+        <hr class="divider">
+        <ul>
+            <li><strong>CLS Learning Solutions</strong> &mdash; Full Stack Web Development: PHP, Laravel &amp; Vue.js</li>
+            <li><strong>Udemy &ndash; Piotr Jura</strong> &mdash; PHP, OOP, Laravel, MySQL, RESTful API</li>
+        </ul>
+    </div>
+
+</body>
+</html>

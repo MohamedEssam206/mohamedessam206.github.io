@@ -96,6 +96,20 @@ ul { list-style: none; }
   background: linear-gradient(90deg, var(--primary), var(--accent));
   border-radius: 2px;
 }
+.nav-right { display: flex; align-items: center; gap: 14px; }
+.lang-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .2s ease, color .2s ease;
+}
+.lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -122,6 +136,33 @@ ul { list-style: none; }
   padding-top: 40px;
 }
 .hero-text { max-width: 640px; }
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.dot-pulse {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
 .eyebrow {
   color: var(--accent);
   font-weight: 600;
@@ -478,6 +519,8 @@ ul { list-style: none; }
 @media (max-width: 720px) {
   .stats-row { grid-template-columns: 1fr 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+  .nav-right { gap: 8px; }
+  .lang-toggle { padding: 6px 12px; font-size: 0.76rem; }
   .nav-links {
     position: absolute;
     top: 68px; left: 0; right: 0;
@@ -503,3 +546,20 @@ ul { list-style: none; }
   .avatar-ring { width: 200px; height: 200px; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+
+/* RTL (Arabic) */
+html[dir="rtl"] {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+html[dir="rtl"] .timeline {
+  border-left: none;
+  border-right: 2px solid var(--border);
+  padding-left: 0;
+  padding-right: 30px;
+}
+html[dir="rtl"] .timeline-dot { left: auto; right: -37px; }
+html[dir="rtl"] .timeline-content li { padding-left: 0; padding-right: 18px; }
+html[dir="rtl"] .timeline-content li::before { left: auto; right: 0; }
+html[dir="rtl"] .nav-links a.active::after { left: 0; right: 0; }
+html[dir="rtl"] .back-to-top { right: auto; left: 24px; }
+html[dir="rtl"] .section-title { flex-direction: row-reverse; justify-content: flex-end; }

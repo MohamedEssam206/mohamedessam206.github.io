@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohamed Essam — Software Engineer</title>
-<meta name="description" content="Mohamed Essam — Backend Software Engineer specializing in PHP, Laravel, MySQL and Vue.js.">
+<meta name="description" content="Mohamed Essam — Full-Stack Software Engineer specializing in PHP, Laravel, Vue.js and MySQL.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,18 +16,21 @@
   <nav class="nav container">
     <a href="#home" class="logo">ME<span class="dot">.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#education" data-i18n="nav_education">Education</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" type="button">العربية</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 </header>
 
@@ -36,17 +39,21 @@
   <!-- HERO -->
   <section id="home" class="hero container">
     <div class="hero-text reveal">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Mohamed Essam</h1>
+      <div class="availability-badge">
+        <span class="dot-pulse"></span>
+        <span data-i18n="hero_available">Available for Work</span>
+      </div>
+      <p class="eyebrow" data-i18n="hero_eyebrow">Hi, I'm</p>
+      <h1 data-i18n="hero_name">Mohamed Essam</h1>
       <p class="role"><span class="typed" id="typedRole"></span><span class="cursor">|</span></p>
-      <p class="lead">
-        Backend-focused Software Engineer building secure, scalable web platforms with
-        <strong>PHP &amp; Laravel</strong> — REST APIs, real-time features, and clean modular architecture
+      <p class="lead" data-i18n-html="hero_lead">
+        Full-Stack Software Engineer building secure, scalable web platforms with
+        <strong>PHP, Laravel &amp; Vue.js</strong> — REST APIs, real-time features, and clean modular architecture
         for booking, marketplace and on-demand service products used across mobile apps and dashboards.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">View Projects</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Get In Touch</a>
       </div>
       <div class="hero-socials">
         <a href="https://github.com/MohamedEssam206" target="_blank" rel="noopener" aria-label="GitHub">
@@ -58,13 +65,16 @@
         <a href="mailto:mohammedessam2062000@gmail.com" aria-label="Email">
           <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M1.5 4.5h21a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-21a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1Zm10.5 8.14L3.6 6.2v11.8h16.8V6.2l-8.4 6.44Zm0-2.02 8.02-6.12H3.98L12 10.62Z"/></svg>
         </a>
+        <a href="assets/Mohamed_Essam_CV.html" target="_blank" rel="noopener" aria-label="Download CV" data-i18n-aria="hero_cv_aria">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.5V9h5.5L13 3.5ZM8 13h8v1.5H8V13Zm0 3.5h8V18H8v-1.5ZM8 10h4v1.5H8V10Z"/></svg>
+        </a>
       </div>
 
       <div class="stats-row">
-        <div class="stat"><span class="stat-num">11+</span><span class="stat-label">Projects Delivered</span></div>
-        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Experience</span></div>
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Mobile Apps Powered</span></div>
-        <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Payment Gateways</span></div>
+        <div class="stat"><span class="stat-num">11+</span><span class="stat-label" data-i18n="stat_projects">Projects Delivered</span></div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label" data-i18n="stat_years">Years Experience</span></div>
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label" data-i18n="stat_apps">Mobile Apps Powered</span></div>
+        <div class="stat"><span class="stat-num">7+</span><span class="stat-label" data-i18n="stat_gateways">Payment Gateways</span></div>
       </div>
     </div>
 
@@ -79,67 +89,67 @@
 
   <!-- ABOUT -->
   <section id="about" class="section container">
-    <h2 class="section-title reveal"><span class="num">01.</span> About Me</h2>
+    <h2 class="section-title reveal"><span class="num">01.</span> <span data-i18n="about_title">About Me</span></h2>
     <div class="about-grid reveal">
-      <p class="about-text">
+      <p class="about-text" data-i18n="about_text">
         Enthusiastic and dedicated software engineer with a strong foundation in web development and a solid
         understanding of core cloud computing concepts (Amazon EC2, S3, VPC, IAM). I'm passionate about building
         efficient, scalable server-side solutions and keeping up with industry best practices — while collaborating
         effectively in cross-functional teams to ship high-quality, optimized code.
       </p>
       <div class="about-facts">
-        <div class="fact"><span class="fact-label">Location</span><span>Cairo, Egypt</span></div>
-        <div class="fact"><span class="fact-label">Role</span><span>Software Engineer</span></div>
-        <div class="fact"><span class="fact-label">Focus</span><span>Backend / Laravel</span></div>
-        <div class="fact"><span class="fact-label">Experience</span><span>2024 – Present</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="fact_location_label">Location</span><span data-i18n="fact_location_value">Cairo, Egypt</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="fact_role_label">Role</span><span data-i18n="fact_role_value">Software Engineer</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="fact_focus_label">Focus</span><span data-i18n="fact_focus_value">Full-Stack / Laravel &amp; Vue.js</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="fact_experience_label">Experience</span><span data-i18n="fact_experience_value">2024 – Present</span></div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section container">
-    <h2 class="section-title reveal"><span class="num">02.</span> What I Do</h2>
+    <h2 class="section-title reveal"><span class="num">02.</span> <span data-i18n="services_title">What I Do</span></h2>
     <div class="services-grid reveal">
       <div class="service-card">
         <div class="service-icon">🔌</div>
-        <h3>REST API Development</h3>
-        <p>Designing secure, well-tested Laravel APIs (Passport/Sanctum auth) that power mobile and web clients.</p>
+        <h3 data-i18n="svc1_title">REST API Development</h3>
+        <p data-i18n="svc1_desc">Designing secure, well-tested Laravel APIs (Passport/Sanctum auth) that power mobile and web clients.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🗄️</div>
-        <h3>Database Design</h3>
-        <p>Modeling and optimizing MySQL schemas — indexing, relationships, and query tuning for scale.</p>
+        <h3 data-i18n="svc2_title">Database Design</h3>
+        <p data-i18n="svc2_desc">Modeling and optimizing MySQL schemas — indexing, relationships, and query tuning for scale.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">⚡</div>
-        <h3>Real-Time Features</h3>
-        <p>Live chat, notifications and tracking with Laravel Reverb, WebSockets and Firebase.</p>
+        <h3 data-i18n="svc3_title">Real-Time Features</h3>
+        <p data-i18n="svc3_desc">Live chat, notifications and tracking with Laravel Reverb, WebSockets and Firebase.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">💳</div>
-        <h3>Payments Integration</h3>
-        <p>Stripe, PayPal, Razorpay, Kashier, MyFatoorah and card/wallet flows done safely end-to-end.</p>
+        <h3 data-i18n="svc4_title">Payments &amp; Messaging</h3>
+        <p data-i18n="svc4_desc">Stripe, PayPal, Razorpay, Kashier and MyFatoorah payments, plus Twilio SMS notifications end-to-end.</p>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section container">
-    <h2 class="section-title reveal"><span class="num">03.</span> Experience</h2>
+    <h2 class="section-title reveal"><span class="num">03.</span> <span data-i18n="experience_title">Experience</span></h2>
     <div class="timeline reveal">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-head">
-            <h3>Software Engineer</h3>
-            <span class="timeline-date">June 2024 – Present</span>
+            <h3 data-i18n="exp_role">Software Engineer</h3>
+            <span class="timeline-date" data-i18n="exp_date">June 2024 – Present</span>
           </div>
-          <p class="timeline-company">Nahr Development Software and Marketing Company — Remote</p>
+          <p class="timeline-company" data-i18n="exp_company">Nahr Development Software and Marketing Company — Remote</p>
           <ul>
-            <li>Developing and maintaining secure, scalable web applications using PHP and Laravel.</li>
-            <li>Designing and optimizing database schemas for performance and scalability.</li>
-            <li>Building efficient RESTful APIs and integrating advanced Laravel features.</li>
-            <li>Applying clean architecture principles to ensure code is reusable, testable, and maintainable.</li>
+            <li data-i18n="exp_li1">Developing and maintaining secure, scalable web applications using PHP and Laravel.</li>
+            <li data-i18n="exp_li2">Designing and optimizing database schemas for performance and scalability.</li>
+            <li data-i18n="exp_li3">Building efficient RESTful APIs and integrating advanced Laravel features.</li>
+            <li data-i18n="exp_li4">Applying clean architecture principles to ensure code is reusable, testable, and maintainable.</li>
           </ul>
         </div>
       </div>
@@ -148,25 +158,26 @@
 
   <!-- SKILLS -->
   <section id="skills" class="section container">
-    <h2 class="section-title reveal"><span class="num">04.</span> Skills</h2>
+    <h2 class="section-title reveal"><span class="num">04.</span> <span data-i18n="skills_title">Skills</span></h2>
     <div class="skills-grid reveal">
       <div class="skill-card">
-        <h3>Back-End</h3>
+        <h3 data-i18n="skill_backend_title">Back-End</h3>
         <div class="tags">
           <span>PHP</span><span>Laravel</span><span>MySQL</span><span>RESTful APIs</span><span>MVC</span>
-          <span>Queue Workers</span><span>Web Sockets</span><span>Cron Jobs</span><span>Payment Gateways</span>
-          <span>Twilio</span><span>Wasabi</span><span>Firebase</span><span>CakePHP</span><span>CodeIgniter</span>
+          <span>Queue Workers</span><span>Web Sockets</span><span>Cron Jobs</span><span>Stripe</span>
+          <span>Payment Gateways</span><span>Twilio (SMS)</span><span>Wasabi</span><span>Firebase</span>
+          <span>CakePHP</span><span>CodeIgniter</span>
         </div>
       </div>
       <div class="skill-card">
-        <h3>Front-End</h3>
+        <h3 data-i18n="skill_frontend_title">Front-End</h3>
         <div class="tags">
           <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
           <span>Tailwind CSS</span><span>AJAX</span><span>Vue.js</span>
         </div>
       </div>
       <div class="skill-card">
-        <h3>Tools &amp; Cloud</h3>
+        <h3 data-i18n="skill_tools_title">Tools &amp; Cloud</h3>
         <div class="tags">
           <span>Git</span><span>GitHub</span><span>Docker Compose</span><span>Postman</span>
           <span>Apache</span><span>RabbitMQ</span><span>TFS</span><span>AWS EC2</span><span>AWS S3</span><span>AWS IAM</span>
@@ -177,10 +188,10 @@
 
   <!-- PROJECTS -->
   <section id="projects" class="section container">
-    <h2 class="section-title reveal"><span class="num">05.</span> Projects</h2>
+    <h2 class="section-title reveal"><span class="num">05.</span> <span data-i18n="projects_title">Projects</span></h2>
 
     <div class="project-filters reveal" id="projectFilters">
-      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
     </div>
 
     <div class="projects-grid reveal" id="projectsGrid"></div>
@@ -188,32 +199,34 @@
 
   <!-- EDUCATION -->
   <section id="education" class="section container">
-    <h2 class="section-title reveal"><span class="num">06.</span> Education &amp; Certifications</h2>
+    <h2 class="section-title reveal"><span class="num">06.</span> <span data-i18n="education_title">Education &amp; Certifications</span></h2>
     <div class="edu-grid reveal">
       <div class="edu-card">
-        <h3>Bachelor of Computer Science</h3>
-        <p class="edu-sub">Higher Technological Institute, 10th of Ramadan City</p>
+        <h3 data-i18n="edu1_title">Bachelor of Computer Science</h3>
+        <p class="edu-sub" data-i18n="edu1_sub">Higher Technological Institute, 10th of Ramadan City</p>
         <span class="edu-date">2023</span>
       </div>
       <div class="edu-card">
-        <h3>PHP, OOP, Laravel, MySQL, RESTful API</h3>
-        <p class="edu-sub">CLS Learning Solutions</p>
+        <h3 data-i18n="edu2_title">PHP, OOP, Laravel, MySQL, RESTful API</h3>
+        <p class="edu-sub" data-i18n="edu2_sub">CLS Learning Solutions</p>
       </div>
       <div class="edu-card">
-        <h3>PHP, OOP, Laravel, MySQL, RESTful API</h3>
-        <p class="edu-sub">Udemy — Piotr Jura</p>
+        <h3 data-i18n="edu3_title">PHP, OOP, Laravel, MySQL, RESTful API</h3>
+        <p class="edu-sub" data-i18n="edu3_sub">Udemy — Piotr Jura</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
-    <h2 class="section-title reveal"><span class="num">07.</span> Get In Touch</h2>
+    <h2 class="section-title reveal"><span class="num">07.</span> <span data-i18n="contact_title">Get In Touch</span></h2>
     <div class="contact-box reveal">
-      <p>Open to backend / full-stack Laravel opportunities and interesting collaborations. Feel free to reach out.</p>
+      <p data-i18n="contact_text">Open to backend / full-stack Laravel opportunities and interesting collaborations. Feel free to reach out.</p>
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:mohammedessam2062000@gmail.com">mohammedessam2062000@gmail.com</a>
         <a class="btn btn-outline" href="tel:+201064286942">+20 106 428 6942</a>
+        <a class="btn btn-outline" href="https://github.com/MohamedEssam206" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/mohammed-essam-473993244/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -222,7 +235,7 @@
 
 <footer class="footer">
   <div class="container">
-    <p>&copy; <span id="year"></span> Mohamed Essam. Built with HTML, CSS &amp; vanilla JS.</p>
+    <p><span data-i18n="footer_copy">&copy;</span> <span id="year"></span> <span data-i18n="footer_text">Mohamed Essam. Built with HTML, CSS &amp; vanilla JS.</span></p>
   </div>
 </footer>
 
