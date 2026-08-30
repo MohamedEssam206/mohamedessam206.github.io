@@ -48,7 +48,14 @@ const projects = [
     tags: ["Laravel", "Vue.js", "Cron Jobs", "Payments"],
     descEn: "Travel and tourism booking platform for hotels, flights, cars, taxis and attractions. Multi-language support, secure payments (Visa/PayPal/Apple Pay/Google Pay), and automated booking-expiration cron jobs.",
     descAr: "منصة حجز سياحة وسفر للفنادق والطيران والسيارات والتاكسي والمعالم السياحية. دعم متعدد اللغات، مدفوعات آمنة (Visa/PayPal/Apple Pay/Google Pay)، وCron Jobs تلقائية لانتهاء صلاحية الحجوزات.",
-    link: "https://booking.nahrdev.com/"
+    link: "https://booking.nahrdev.com/",
+    images: [
+      { src: "assets/projects/book-iraq/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "booking.nahrdev.com" },
+      { src: "assets/projects/book-iraq/hotel-search.jpg", captionEn: "Hotel search results", captionAr: "نتائج البحث عن الفنادق", path: "booking.nahrdev.com/hotel" },
+      { src: "assets/projects/book-iraq/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "booking.nahrdev.com/admin" },
+      { src: "assets/projects/book-iraq/admin-hotels.png", captionEn: "Hotel management", captionAr: "إدارة الفنادق", path: "booking.nahrdev.com/admin/module/hotel" },
+      { src: "assets/projects/book-iraq/admin-pages.png", captionEn: "Page builder", captionAr: "إدارة الصفحات", path: "booking.nahrdev.com/admin/module/page" }
+    ]
   },
   {
     title: "Trimly",
