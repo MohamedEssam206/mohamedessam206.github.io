@@ -115,7 +115,7 @@ const projects = [
     tags: ["Laravel", "MySQL", "CRUD"],
     descEn: "Educational platform for managing courses and student enrollments — admins create, update and delete courses while tracking student enrollment data.",
     descAr: "منصة تعليمية لإدارة الكورسات وتسجيلات الطلاب — يقدر الأدمن يضيف ويعدّل ويحذف الكورسات ويتابع بيانات تسجيل الطلاب.",
-    link: "https://Nesba.nahrdev.com/"
+    link: "https://nessba.nahrdev.com/"
   },
   {
     title: "Wawan GYM",
