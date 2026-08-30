@@ -63,6 +63,14 @@ const projects = [
     tags: ["Laravel", "WebSockets", "Multi-app"],
     descEn: "Beauty services marketplace with a responsive website and two mobile apps (User & Freelancer). Real-time notifications, freelancer wallet system, subscription management, and a revenue analytics dashboard.",
     descAr: "ماركت بليس لخدمات التجميل بموقع متجاوب وتطبيقين موبايل (مستخدم وفريلانسر). إشعارات لحظية، محفظة إلكترونية للفريلانسرز، إدارة اشتراكات، ولوحة تحليلات أداء.",
+    images: [
+      { src: "assets/projects/trimly/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "trimlydev.nahrdev.com" },
+      { src: "assets/projects/trimly/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "trimlydev.nahrdev.com/login-page" },
+      { src: "assets/projects/trimly/register.png", captionEn: "Vendor registration", captionAr: "تسجيل حساب مزوّد جديد", path: "trimlydev.nahrdev.com/register" },
+      { src: "assets/projects/trimly/dashboard.png", captionEn: "Performance analytics dashboard", captionAr: "لوحة تحليلات الأداء", path: "trimlydev.nahrdev.com/apps" },
+      { src: "assets/projects/trimly/bookings-calendar.png", captionEn: "Booking calendar", captionAr: "تقويم الحجوزات", path: "trimlydev.nahrdev.com/app/bookings" },
+      { src: "assets/projects/trimly/vendors.png", captionEn: "Vendor management", captionAr: "إدارة المزوّدين", path: "trimlydev.nahrdev.com/app/user" }
+    ],
     link: "https://trimlydev.nahrdev.com/"
   },
   {
