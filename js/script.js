@@ -88,6 +88,21 @@ const projects = [
     link: "https://trimlydev.nahrdev.com/"
   },
   {
+    title: "Nesba",
+    tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
+    descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
+    descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
+    link: "https://nessba.nahrdev.com/",
+    images: [
+      { src: "assets/projects/nessba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "nessba.nahrdev.com" },
+      { src: "assets/projects/nessba/grades.png", captionEn: "Grades listing", captionAr: "قائمة الصفوف الدراسية", path: "nessba.nahrdev.com/grades" },
+      { src: "assets/projects/nessba/course-details.png", captionEn: "Course details & subscription gate", captionAr: "تفاصيل الكورس وبوابة الاشتراك", path: "nessba.nahrdev.com/course-details" },
+      { src: "assets/projects/nessba/contact.jpg", captionEn: "Contact us", captionAr: "تواصل معنا", path: "nessba.nahrdev.com/contactus" },
+      { src: "assets/projects/nessba/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "nessba.nahrdev.com/admin/dashboard" },
+      { src: "assets/projects/nessba/admin-students.png", captionEn: "Students table (server-side DataTables)", captionAr: "جدول الطلاب (DataTables)", path: "nessba.nahrdev.com/admin/students" }
+    ]
+  },
+  {
     title: "MoveNow",
     tags: ["Laravel", "Stripe", "WebSockets", "Firebase"],
     descEn: "Ride-sharing and delivery platform with a REST API for two mobile apps (User & Provider). Real-time trip management via WebSockets, Stripe payments, and provider onboarding with document verification.",
@@ -119,10 +134,17 @@ const projects = [
   },
   {
     title: "HYDRO",
-    tags: ["Laravel", "Repository Pattern", "AJAX"],
-    descEn: "Corporate website for an Egyptian aluminum manufacturer exporting to 40+ countries. Custom admin dashboard with full CRUD over all site content, multilingual system, and dynamic media management.",
-    descAr: "موقع شركة تصدير ألومنيوم مصرية بتصدّر لأكثر من 40 دولة. لوحة تحكم مخصصة بصلاحيات CRUD كاملة على كل محتوى الموقع، نظام متعدد اللغات، وإدارة وسائط ديناميكية.",
-    link: "https://hydro-metal.org/"
+    tags: ["Laravel 12", "Modular Architecture", "RBAC", "RTL / i18n", "MySQL"],
+    descEn: "Full-stack Laravel 12 multilingual CMS & admin dashboard for a hydro-services business, built with a modular architecture (17 self-contained modules) and custom RBAC permissions. Public bilingual (Arabic/English RTL) site covering services, projects, gallery, and careers, with JSON-based translatable content and quote-request/contact workflows.",
+    descAr: "منصة CMS ولوحة تحكم Laravel 12 متكاملة ومتعددة اللغات لشركة خدمات هيدروليكية/معدنية، مبنية بمعمارية Modular (17 موديول مستقل) وصلاحيات RBAC مخصصة. موقع عام ثنائي اللغة (عربي/إنجليزي RTL) يغطي الخدمات والمشاريع والمعرض والوظائف، بمحتوى قابل للترجمة JSON-based وworkflows لطلبات عروض الأسعار والتواصل.",
+    link: "https://hydro-metal.org/",
+    images: [
+      { src: "assets/projects/hydro/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "hydro-metal.org" },
+      { src: "assets/projects/hydro/projects-public.jpg", captionEn: "Projects showcase (full page)", captionAr: "معرض المشاريع (كامل)", path: "hydro-metal.org/projects" },
+      { src: "assets/projects/hydro/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "hydro-metal.org/admin/dashboard" },
+      { src: "assets/projects/hydro/admin-projects.png", captionEn: "Project management", captionAr: "إدارة المشاريع", path: "hydro-metal.org/admin/project" },
+      { src: "assets/projects/hydro/admin-services.png", captionEn: "Service management", captionAr: "إدارة الخدمات", path: "hydro-metal.org/admin/service" }
+    ]
   },
   {
     title: "Iplace24",
@@ -137,21 +159,6 @@ const projects = [
       { src: "assets/projects/iplace24/station-requests.png", captionEn: "Station requests", captionAr: "طلبات فتح محطة", path: "iplace24.nahrdev.com/admin/stationRequest" },
       { src: "assets/projects/iplace24/cars.png", captionEn: "Car management", captionAr: "إدارة السيارات", path: "iplace24.nahrdev.com/admin/car" },
       { src: "assets/projects/iplace24/add-user.png", captionEn: "Add admin user", captionAr: "إضافة مستخدم أدمن", path: "iplace24.nahrdev.com/admin/user/create" }
-    ]
-  },
-  {
-    title: "Nesba",
-    tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
-    descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
-    descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
-    link: "https://nessba.nahrdev.com/",
-    images: [
-      { src: "assets/projects/nessba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "nessba.nahrdev.com" },
-      { src: "assets/projects/nessba/grades.png", captionEn: "Grades listing", captionAr: "قائمة الصفوف الدراسية", path: "nessba.nahrdev.com/grades" },
-      { src: "assets/projects/nessba/course-details.png", captionEn: "Course details & subscription gate", captionAr: "تفاصيل الكورس وبوابة الاشتراك", path: "nessba.nahrdev.com/course-details" },
-      { src: "assets/projects/nessba/contact.jpg", captionEn: "Contact us", captionAr: "تواصل معنا", path: "nessba.nahrdev.com/contactus" },
-      { src: "assets/projects/nessba/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "nessba.nahrdev.com/admin/dashboard" },
-      { src: "assets/projects/nessba/admin-students.png", captionEn: "Students table (server-side DataTables)", captionAr: "جدول الطلاب (DataTables)", path: "nessba.nahrdev.com/admin/students" }
     ]
   },
   {
