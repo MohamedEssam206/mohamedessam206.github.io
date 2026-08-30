@@ -2,10 +2,17 @@
 const projects = [
   {
     title: "Qarar",
-    tags: ["Laravel 12", "Passport", "Reverb", "MyFatoorah"],
-    descEn: "Full-stack Laravel 12 healthcare booking platform with a multilingual admin dashboard and REST API. Dynamic role & permission system, charity committee workflows, video/voice consultations, MyFatoorah payments, and real-time chat via Laravel Reverb.",
-    descAr: "منصة حجز مواعيد صحية متكاملة ببنية Laravel 12، بلوحة تحكم متعددة اللغات وREST API. نظام أدوار وصلاحيات ديناميكي، ورش عمل لجان الجمعيات الخيرية، استشارات فيديو وصوت، مدفوعات MyFatoorah، وشات لحظي عبر Laravel Reverb.",
-    link: "https://qarar.nahrdev.com/"
+    tags: ["Laravel 12", "Passport", "Reverb", "Agora", "MyFatoorah"],
+    descEn: "Full-stack Laravel 12 healthcare booking platform with a multilingual admin dashboard and REST API. Dynamic role & permission system, charity committee workflows, live video/voice consultations via Agora, MyFatoorah payments, and real-time chat via Laravel Reverb.",
+    descAr: "منصة حجز مواعيد صحية متكاملة ببنية Laravel 12، بلوحة تحكم متعددة اللغات وREST API. نظام أدوار وصلاحيات ديناميكي، ورش عمل لجان الجمعيات الخيرية، استشارات فيديو وصوت لحظية عبر Agora، مدفوعات MyFatoorah، وشات لحظي عبر Laravel Reverb.",
+    link: "https://qarar.nahrdev.com/",
+    images: [
+      { src: "assets/projects/qarar/login.png", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن" },
+      { src: "assets/projects/qarar/dashboard.png", captionEn: "Dashboard overview", captionAr: "نظرة عامة على لوحة التحكم" },
+      { src: "assets/projects/qarar/edit-moderator.png", captionEn: "Edit moderator form", captionAr: "فورم تعديل المشرف" },
+      { src: "assets/projects/qarar/roles-permissions.png", captionEn: "Roles & permissions", captionAr: "الأدوار والصلاحيات" },
+      { src: "assets/projects/qarar/committee-conversation.png", captionEn: "Committee conversation", captionAr: "محادثة اللجنة" }
+    ]
   },
   {
     title: "Rawnq",
@@ -257,15 +264,90 @@ function renderProjects(filter) {
     const desc = currentLang === "ar" ? p.descAr : p.descEn;
     const card = document.createElement("article");
     card.className = "project-card";
+
+    const hasGallery = p.images && p.images.length > 0;
+    const galleryHtml = hasGallery
+      ? `<button type="button" class="project-cover" aria-label="${currentLang === "ar" ? "شوف صور المشروع" : "View project screenshots"}">
+           <img src="${p.images[0].src}" alt="${p.title}" loading="lazy">
+           <span class="gallery-badge">🖼 ${p.images.length}</span>
+         </button>`
+      : "";
+
     card.innerHTML = `
+      ${galleryHtml}
       <h3>${p.title}</h3>
       <p>${desc}</p>
       <div class="project-tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
       ${p.link ? `<a class="project-link" href="${p.link}" target="_blank" rel="noopener">${translations[currentLang].view_project}</a>` : ""}
     `;
+
+    if (hasGallery) {
+      card.querySelector(".project-cover").addEventListener("click", () => openLightbox(p.images, 0));
+    }
+
     projectsGrid.appendChild(card);
   });
 }
+
+// ---- Lightbox ----
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxCounter = document.getElementById("lightboxCounter");
+const lightboxClose = document.getElementById("lightboxClose");
+const lightboxPrev = document.getElementById("lightboxPrev");
+const lightboxNext = document.getElementById("lightboxNext");
+
+let galleryImages = [];
+let galleryIndex = 0;
+
+function openLightbox(images, index) {
+  galleryImages = images;
+  galleryIndex = index;
+  updateLightbox();
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function updateLightbox() {
+  const img = galleryImages[galleryIndex];
+  lightboxImg.src = img.src;
+  const caption = currentLang === "ar" ? img.captionAr : img.captionEn;
+  lightboxImg.alt = caption;
+  lightboxCaption.textContent = caption;
+  lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
+  const multi = galleryImages.length > 1;
+  lightboxPrev.style.display = multi ? "flex" : "none";
+  lightboxNext.style.display = multi ? "flex" : "none";
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function showPrevImage() {
+  galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+  updateLightbox();
+}
+
+function showNextImage() {
+  galleryIndex = (galleryIndex + 1) % galleryImages.length;
+  updateLightbox();
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightboxPrev.addEventListener("click", showPrevImage);
+lightboxNext.addEventListener("click", showNextImage);
+lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("open")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") showPrevImage();
+  if (e.key === "ArrowRight") showNextImage();
+});
 
 function buildFilters() {
   const tagSet = new Set();
