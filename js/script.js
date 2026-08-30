@@ -19,7 +19,14 @@ const projects = [
     tags: ["Laravel", "Vue.js 3", "Multi-tenant", "Wallet"],
     descEn: "Multi-vendor beauty services marketplace with 35+ independent modules. Wallet system, granular RBAC, multi-language/currency support, real-time scheduling, and multi-gateway payments (Stripe, PayPal, Razorpay, Kashier).",
     descAr: "ماركت بليس متعدد البائعين لخدمات التجميل بأكثر من 35 موديول مستقل. نظام محفظة إلكترونية، صلاحيات دقيقة (RBAC)، دعم متعدد اللغات والعملات، جدولة لحظية، ومدفوعات متعددة البوابات (Stripe, PayPal, Razorpay, Kashier).",
-    link: "https://rawnq.nahrdev.com/"
+    link: "https://rawnq.nahrdev.com/",
+    images: [
+      { src: "assets/projects/rawnq/landing.png", captionEn: "Marketing landing page", captionAr: "الصفحة الرئيسية التسويقية", path: "rawnq.nahrdev.com" },
+      { src: "assets/projects/rawnq/login.png", captionEn: "Vendor / admin login", captionAr: "تسجيل دخول المزوّد والأدمن", path: "rawnq.nahrdev.com/login-page" },
+      { src: "assets/projects/rawnq/dashboard.png", captionEn: "Analytics dashboard", captionAr: "لوحة التحليلات", path: "rawnq.nahrdev.com/apps" },
+      { src: "assets/projects/rawnq/bookings-table.png", captionEn: "Bookings table", captionAr: "جدول الحجوزات", path: "rawnq.nahrdev.com/app/bookings-table-view" },
+      { src: "assets/projects/rawnq/pricing.png", captionEn: "Vendor pricing plans", captionAr: "خطط أسعار المزوّدين", path: "rawnq.nahrdev.com/pricing" }
+    ]
   },
   {
     title: "KUBA",
