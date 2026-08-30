@@ -104,6 +104,13 @@ const projects = [
     ]
   },
   {
+    title: "HYDRO",
+    tags: ["Laravel", "Repository Pattern", "AJAX"],
+    descEn: "Corporate website for an Egyptian aluminum manufacturer exporting to 40+ countries. Custom admin dashboard with full CRUD over all site content, multilingual system, and dynamic media management.",
+    descAr: "موقع شركة تصدير ألومنيوم مصرية بتصدّر لأكثر من 40 دولة. لوحة تحكم مخصصة بصلاحيات CRUD كاملة على كل محتوى الموقع، نظام متعدد اللغات، وإدارة وسائط ديناميكية.",
+    link: "https://hydro-metal.org/"
+  },
+  {
     title: "Iplace24",
     tags: ["Laravel", "MySQL", "AJAX"],
     descEn: "Car maintenance platform with a web dashboard and two mobile apps (User & Vendor). Nearest service-station discovery, car rental during repair time, remote key drop-off, and secure payments.",
@@ -123,13 +130,6 @@ const projects = [
     descEn: "Gym management dashboard for subscriptions, memberships, coaches, branches and activities, paired with a mobile app offering dynamic, PDF-exportable meal and workout plans for users and coaches.",
     descAr: "لوحة تحكم لإدارة صالة جيم (اشتراكات، عضويات، مدربين، فروع، أنشطة)، مع تطبيق موبايل بخطط غذائية وتمرينية ديناميكية قابلة للتصدير كـ PDF للمستخدمين والمدربين.",
     link: null
-  },
-  {
-    title: "HYDRO",
-    tags: ["Laravel", "Repository Pattern", "AJAX"],
-    descEn: "Corporate website for an Egyptian aluminum manufacturer exporting to 40+ countries. Custom admin dashboard with full CRUD over all site content, multilingual system, and dynamic media management.",
-    descAr: "موقع شركة تصدير ألومنيوم مصرية بتصدّر لأكثر من 40 دولة. لوحة تحكم مخصصة بصلاحيات CRUD كاملة على كل محتوى الموقع، نظام متعدد اللغات، وإدارة وسائط ديناميكية.",
-    link: "https://hydro-metal.org/"
   }
 ];
 
