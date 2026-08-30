@@ -88,21 +88,6 @@ const projects = [
     link: "https://trimlydev.nahrdev.com/"
   },
   {
-    title: "Nesba",
-    tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
-    descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
-    descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
-    link: "https://nessba.nahrdev.com/",
-    images: [
-      { src: "assets/projects/nessba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "nessba.nahrdev.com" },
-      { src: "assets/projects/nessba/grades.png", captionEn: "Grades listing", captionAr: "قائمة الصفوف الدراسية", path: "nessba.nahrdev.com/grades" },
-      { src: "assets/projects/nessba/course-details.png", captionEn: "Course details & subscription gate", captionAr: "تفاصيل الكورس وبوابة الاشتراك", path: "nessba.nahrdev.com/course-details" },
-      { src: "assets/projects/nessba/contact.jpg", captionEn: "Contact us", captionAr: "تواصل معنا", path: "nessba.nahrdev.com/contactus" },
-      { src: "assets/projects/nessba/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "nessba.nahrdev.com/admin/dashboard" },
-      { src: "assets/projects/nessba/admin-students.png", captionEn: "Students table (server-side DataTables)", captionAr: "جدول الطلاب (DataTables)", path: "nessba.nahrdev.com/admin/students" }
-    ]
-  },
-  {
     title: "MoveNow",
     tags: ["Laravel", "Stripe", "WebSockets", "Firebase"],
     descEn: "Ride-sharing and delivery platform with a REST API for two mobile apps (User & Provider). Real-time trip management via WebSockets, Stripe payments, and provider onboarding with document verification.",
@@ -115,6 +100,21 @@ const projects = [
       { src: "assets/projects/movenow/trips.png", captionEn: "Trip management", captionAr: "إدارة الرحلات", path: "movenow.nahrdev.com/admin/trip" },
       { src: "assets/projects/movenow/users.png", captionEn: "User management", captionAr: "إدارة المستخدمين", path: "movenow.nahrdev.com/admin/user" },
       { src: "assets/projects/movenow/transactions.png", captionEn: "Transactions", captionAr: "المعاملات المالية", path: "movenow.nahrdev.com/admin/transaction" }
+    ]
+  },
+  {
+    title: "Nesba",
+    tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
+    descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
+    descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
+    link: "https://nessba.nahrdev.com/",
+    images: [
+      { src: "assets/projects/nessba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "nessba.nahrdev.com" },
+      { src: "assets/projects/nessba/grades.png", captionEn: "Grades listing", captionAr: "قائمة الصفوف الدراسية", path: "nessba.nahrdev.com/grades" },
+      { src: "assets/projects/nessba/course-details.png", captionEn: "Course details & subscription gate", captionAr: "تفاصيل الكورس وبوابة الاشتراك", path: "nessba.nahrdev.com/course-details" },
+      { src: "assets/projects/nessba/contact.jpg", captionEn: "Contact us", captionAr: "تواصل معنا", path: "nessba.nahrdev.com/contactus" },
+      { src: "assets/projects/nessba/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "nessba.nahrdev.com/admin/dashboard" },
+      { src: "assets/projects/nessba/admin-students.png", captionEn: "Students table (server-side DataTables)", captionAr: "جدول الطلاب (DataTables)", path: "nessba.nahrdev.com/admin/students" }
     ]
   },
   {
