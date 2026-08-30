@@ -21,7 +21,8 @@ const projects = [
     descAr: "ماركت بليس متعدد البائعين لخدمات التجميل بأكثر من 35 موديول مستقل. نظام محفظة إلكترونية، صلاحيات دقيقة (RBAC)، دعم متعدد اللغات والعملات، جدولة لحظية، ومدفوعات متعددة البوابات (Stripe, PayPal, Razorpay, Kashier).",
     link: "https://rawnq.nahrdev.com/",
     images: [
-      { src: "assets/projects/rawnq/landing.png", captionEn: "Marketing landing page", captionAr: "الصفحة الرئيسية التسويقية", path: "rawnq.nahrdev.com" },
+      { src: "assets/projects/rawnq/landing.jpg", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "rawnq.nahrdev.com" },
+      { src: "assets/projects/rawnq/register.png", captionEn: "Vendor registration", captionAr: "تسجيل حساب مزوّد جديد", path: "rawnq.nahrdev.com/register" },
       { src: "assets/projects/rawnq/login.png", captionEn: "Vendor / admin login", captionAr: "تسجيل دخول المزوّد والأدمن", path: "rawnq.nahrdev.com/login-page" },
       { src: "assets/projects/rawnq/dashboard.png", captionEn: "Analytics dashboard", captionAr: "لوحة التحليلات", path: "rawnq.nahrdev.com/apps" },
       { src: "assets/projects/rawnq/bookings-table.png", captionEn: "Bookings table", captionAr: "جدول الحجوزات", path: "rawnq.nahrdev.com/app/bookings-table-view" },
