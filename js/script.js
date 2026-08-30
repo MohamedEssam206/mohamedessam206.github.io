@@ -1,6 +1,20 @@
 // ---- Data: projects (bilingual) ----
 const projects = [
   {
+    title: "OctoBoss",
+    tags: ["Laravel 12", "Passport", "Reverb", "Firebase FCM", "Wallet System", "MySQL", "yajra DataTables"],
+    descEn: "Full-stack Laravel 12 on-demand home-services marketplace serving three separate clients from one backend: a customer mobile app, a worker/technician mobile app, and an admin dashboard. Dual Laravel Passport guards keep customer and worker authentication completely isolated. Built a full ticket lifecycle engine (active → offered → accepted → en route → arrived → in progress → resolved) with a bidding/offers system, live GPS location tracking, and in-app chat between customers and workers. Implemented an internal wallet & monetization system — worker wallets with transaction history, paid membership tiers gating access to job leads, and a boost-up feature for paid profile visibility — with a remote kill-switch to enable/disable payment features without a redeploy. Real-time updates (ticket status, offers, chat) via Laravel Reverb (WebSockets), with Firebase Cloud Messaging push notifications as the fallback. Fully bilingual (Arabic/English) across both mobile apps and the admin dashboard. Admin panel built with Blade + yajra DataTables covering users, workers, tickets, wallets, memberships, and complaints.",
+    descAr: "منصة Laravel 12 متكاملة لخدمات المنزل عند الطلب، بتخدم ثلاث عملاء منفصلين من باك اند واحد: تطبيق موبايل للعميل، تطبيق موبايل للفني/العامل، ولوحة تحكم أدمن. نظام Passport بحارسين منفصلين يفصل تسجيل دخول العميل عن العامل تمامًا. محرك دورة حياة تذاكر كامل (نشطة ← معروضة ← مقبولة ← في الطريق ← وصل ← جاري التنفيذ ← تم الحل) مع نظام مزايدة/عروض، تتبّع موقع GPS لحظي، وشات داخل التطبيق بين العميل والعامل. نظام محفظة وتحقيق دخل داخلي — محافظ للعمال بسجل معاملات، باقات عضوية مدفوعة بتتحكم في الوصول لطلبات الشغل، وميزة Boost-Up لظهور البروفايل مقابل رسوم — مع مفتاح تعطيل عن بُعد لتفعيل/إيقاف ميزات الدفع من غير إعادة نشر. تحديثات لحظية (حالة التذكرة، العروض، الشات) عبر Laravel Reverb (WebSockets)، وإشعارات Firebase Cloud Messaging كخط احتياطي. ثنائي اللغة بالكامل (عربي/إنجليزي) في التطبيقين ولوحة التحكم. لوحة الأدمن مبنية بـ Blade وyajra DataTables وبتغطي المستخدمين، العمال، التذاكر، المحافظ، العضويات، والشكاوى.",
+    link: "https://octoboos.nahrdev.com/",
+    images: [
+      { src: "assets/projects/octoboss/landing.jpg", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "octoboos.nahrdev.com" },
+      { src: "assets/projects/octoboss/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "octoboos.nahrdev.com/login" },
+      { src: "assets/projects/octoboss/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "octoboos.nahrdev.com/admin/home" },
+      { src: "assets/projects/octoboss/tickets.png", captionEn: "Ticket lifecycle management", captionAr: "إدارة دورة حياة التذاكر", path: "octoboos.nahrdev.com/admin/ticket" },
+      { src: "assets/projects/octoboss/workers.png", captionEn: "Worker management", captionAr: "إدارة العمال", path: "octoboos.nahrdev.com/admin/worker" }
+    ]
+  },
+  {
     title: "Qarar",
     tags: ["Laravel 12", "Passport", "Reverb", "Agora", "MyFatoorah"],
     descEn: "Full-stack Laravel 12 healthcare booking platform with a multilingual admin dashboard and REST API. Dynamic role & permission system, charity committee workflows, live video/voice consultations via Agora, MyFatoorah payments, and real-time chat via Laravel Reverb.",
