@@ -534,6 +534,13 @@ html[dir="rtl"] .lang-select {
   flex-direction: column;
   max-width: 100%;
 }
+.mockup-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mockup-body::-webkit-scrollbar { width: 8px; }
+.mockup-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+.mockup-body::-webkit-scrollbar-track { background: transparent; }
 
 /* LIGHTBOX */
 .lightbox {
@@ -569,13 +576,17 @@ html[dir="rtl"] .lang-select {
   display: flex;
   max-width: 100%;
 }
+.lightbox-stage .mockup-frame {
+  width: min(840px, 82vw);
+  max-height: 78vh;
+}
+.lightbox-stage .mockup-body {
+  max-height: calc(78vh - 44px);
+}
 .lightbox-stage .mockup-frame img {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: min(840px, 82vw);
-  max-height: calc(78vh - 44px);
-  object-fit: contain;
 }
 .lightbox-caption { color: var(--text); font-size: 0.9rem; text-align: center; }
 .lightbox-counter { color: var(--text-muted); font-size: 0.78rem; }

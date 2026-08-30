@@ -33,7 +33,15 @@ const projects = [
     tags: ["Laravel", "Repository Pattern", "Bilingual CMS"],
     descEn: "Delivery company website with a fully dynamic admin dashboard driving all front-end content. 18+ CRUD modules, bilingual JSON-based translatable fields, and auto-generated per-action permissions.",
     descAr: "موقع شركة شحن وتوصيل بلوحة تحكم ديناميكية بالكامل. أكثر من 18 موديول CRUD، محتوى ثنائي اللغة مبني على JSON، وصلاحيات مولّدة تلقائيًا لكل إجراء.",
-    link: "https://kuba.nahrdev.com/"
+    link: "https://kuba.nahrdev.com/",
+    images: [
+      { src: "assets/projects/kuba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "kuba.nahrdev.com" },
+      { src: "assets/projects/kuba/services.jpg", captionEn: "Services page (full page)", captionAr: "صفحة الخدمات (كاملة)", path: "kuba.nahrdev.com/services" },
+      { src: "assets/projects/kuba/contact.jpg", captionEn: "Contact page", captionAr: "صفحة التواصل", path: "kuba.nahrdev.com/contact" },
+      { src: "assets/projects/kuba/admin-dashboard.jpg", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "kuba.nahrdev.com/admin/home" },
+      { src: "assets/projects/kuba/admin-homepage-editor.jpg", captionEn: "Homepage content editor (full page)", captionAr: "محرر محتوى الصفحة الرئيسية (كامل)", path: "kuba.nahrdev.com/admin/homeSetting" },
+      { src: "assets/projects/kuba/admin-services.jpg", captionEn: "Services management", captionAr: "إدارة الخدمات", path: "kuba.nahrdev.com/admin/service" }
+    ]
   },
   {
     title: "Book Iraq",
@@ -331,6 +339,7 @@ function updateLightbox() {
   lightboxCaption.textContent = caption;
   lightboxUrl.textContent = img.path || "";
   lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
+  lightboxImg.parentElement.scrollTop = 0;
   const multi = galleryImages.length > 1;
   lightboxPrev.style.display = multi ? "flex" : "none";
   lightboxNext.style.display = multi ? "flex" : "none";
