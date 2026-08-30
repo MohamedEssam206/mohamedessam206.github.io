@@ -78,7 +78,15 @@ const projects = [
     tags: ["Laravel", "Stripe", "WebSockets", "Firebase"],
     descEn: "Ride-sharing and delivery platform with a REST API for two mobile apps (User & Provider). Real-time trip management via WebSockets, Stripe payments, and provider onboarding with document verification.",
     descAr: "منصة نقل ركاب وتوصيل بـ REST API لتطبيقين (مستخدم ومزوّد خدمة). إدارة رحلات لحظية عبر WebSockets، مدفوعات Stripe، وتسجيل مزوّدي خدمة بتوثيق مستندات.",
-    link: "https://movenow.nahrdev.com/"
+    link: "https://movenow.nahrdev.com/",
+    images: [
+      { src: "assets/projects/movenow/landing.jpg", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "movenow.nahrdev.com" },
+      { src: "assets/projects/movenow/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "movenow.nahrdev.com/login" },
+      { src: "assets/projects/movenow/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "movenow.nahrdev.com/admin/home" },
+      { src: "assets/projects/movenow/trips.png", captionEn: "Trip management", captionAr: "إدارة الرحلات", path: "movenow.nahrdev.com/admin/trip" },
+      { src: "assets/projects/movenow/users.png", captionEn: "User management", captionAr: "إدارة المستخدمين", path: "movenow.nahrdev.com/admin/user" },
+      { src: "assets/projects/movenow/transactions.png", captionEn: "Transactions", captionAr: "المعاملات المالية", path: "movenow.nahrdev.com/admin/transaction" }
+    ]
   },
   {
     title: "Motah",
