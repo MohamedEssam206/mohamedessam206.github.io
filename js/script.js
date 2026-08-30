@@ -141,10 +141,18 @@ const projects = [
   },
   {
     title: "Nesba",
-    tags: ["Laravel", "MySQL", "CRUD"],
-    descEn: "Educational platform for managing courses and student enrollments — admins create, update and delete courses while tracking student enrollment data.",
-    descAr: "منصة تعليمية لإدارة الكورسات وتسجيلات الطلاب — يقدر الأدمن يضيف ويعدّل ويحذف الكورسات ويتابع بيانات تسجيل الطلاب.",
-    link: "https://nessba.nahrdev.com/"
+    tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
+    descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
+    descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
+    link: "https://nessba.nahrdev.com/",
+    images: [
+      { src: "assets/projects/nessba/landing.jpg", captionEn: "Homepage (full page)", captionAr: "الصفحة الرئيسية (كاملة)", path: "nessba.nahrdev.com" },
+      { src: "assets/projects/nessba/grades.png", captionEn: "Grades listing", captionAr: "قائمة الصفوف الدراسية", path: "nessba.nahrdev.com/grades" },
+      { src: "assets/projects/nessba/course-details.png", captionEn: "Course details & subscription gate", captionAr: "تفاصيل الكورس وبوابة الاشتراك", path: "nessba.nahrdev.com/course-details" },
+      { src: "assets/projects/nessba/contact.jpg", captionEn: "Contact us", captionAr: "تواصل معنا", path: "nessba.nahrdev.com/contactus" },
+      { src: "assets/projects/nessba/admin-dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "nessba.nahrdev.com/admin/dashboard" },
+      { src: "assets/projects/nessba/admin-students.png", captionEn: "Students table (server-side DataTables)", captionAr: "جدول الطلاب (DataTables)", path: "nessba.nahrdev.com/admin/students" }
+    ]
   },
   {
     title: "Wawan GYM",
