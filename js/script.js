@@ -115,7 +115,15 @@ const projects = [
     tags: ["Laravel", "MySQL", "AJAX"],
     descEn: "Car maintenance platform with a web dashboard and two mobile apps (User & Vendor). Nearest service-station discovery, car rental during repair time, remote key drop-off, and secure payments.",
     descAr: "منصة صيانة سيارات بلوحة تحكم وتطبيقين (مستخدم ومزوّد خدمة). اكتشاف أقرب محطات الخدمة، تأجير سيارة وقت الصيانة، تسليم مفاتيح عن بُعد، ومدفوعات آمنة.",
-    link: "https://Iplace24.nahrdev.com/"
+    link: "https://Iplace24.nahrdev.com/",
+    images: [
+      { src: "assets/projects/iplace24/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "iplace24.nahrdev.com/login" },
+      { src: "assets/projects/iplace24/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "iplace24.nahrdev.com/admin/home" },
+      { src: "assets/projects/iplace24/stations.png", captionEn: "Service stations", captionAr: "محطات الخدمة", path: "iplace24.nahrdev.com/admin/station" },
+      { src: "assets/projects/iplace24/station-requests.png", captionEn: "Station requests", captionAr: "طلبات فتح محطة", path: "iplace24.nahrdev.com/admin/stationRequest" },
+      { src: "assets/projects/iplace24/cars.png", captionEn: "Car management", captionAr: "إدارة السيارات", path: "iplace24.nahrdev.com/admin/car" },
+      { src: "assets/projects/iplace24/add-user.png", captionEn: "Add admin user", captionAr: "إضافة مستخدم أدمن", path: "iplace24.nahrdev.com/admin/user/create" }
+    ]
   },
   {
     title: "Nesba",
