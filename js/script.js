@@ -7,11 +7,11 @@ const projects = [
     descAr: "منصة حجز مواعيد صحية متكاملة ببنية Laravel 12، بلوحة تحكم متعددة اللغات وREST API. نظام أدوار وصلاحيات ديناميكي، ورش عمل لجان الجمعيات الخيرية، استشارات فيديو وصوت لحظية عبر Agora، مدفوعات MyFatoorah، وشات لحظي عبر Laravel Reverb.",
     link: "https://qarar.nahrdev.com/",
     images: [
-      { src: "assets/projects/qarar/login.png", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن" },
-      { src: "assets/projects/qarar/dashboard.png", captionEn: "Dashboard overview", captionAr: "نظرة عامة على لوحة التحكم" },
-      { src: "assets/projects/qarar/edit-moderator.png", captionEn: "Edit moderator form", captionAr: "فورم تعديل المشرف" },
-      { src: "assets/projects/qarar/roles-permissions.png", captionEn: "Roles & permissions", captionAr: "الأدوار والصلاحيات" },
-      { src: "assets/projects/qarar/committee-conversation.png", captionEn: "Committee conversation", captionAr: "محادثة اللجنة" }
+      { src: "assets/projects/qarar/login.png", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "qarar.nahrdev.com" },
+      { src: "assets/projects/qarar/dashboard.png", captionEn: "Dashboard overview", captionAr: "نظرة عامة على لوحة التحكم", path: "qarar.nahrdev.com/admin/home" },
+      { src: "assets/projects/qarar/edit-moderator.png", captionEn: "Edit moderator form", captionAr: "فورم تعديل المشرف", path: "qarar.nahrdev.com/admin/moderator/edit/78" },
+      { src: "assets/projects/qarar/roles-permissions.png", captionEn: "Roles & permissions", captionAr: "الأدوار والصلاحيات", path: "qarar.nahrdev.com/admin/roles" },
+      { src: "assets/projects/qarar/committee-conversation.png", captionEn: "Committee conversation", captionAr: "محادثة اللجنة", path: "qarar.nahrdev.com/admin/committee-conversation/12" }
     ]
   },
   {
@@ -268,6 +268,11 @@ function renderProjects(filter) {
     const hasGallery = p.images && p.images.length > 0;
     const galleryHtml = hasGallery
       ? `<button type="button" class="project-cover" aria-label="${currentLang === "ar" ? "شوف صور المشروع" : "View project screenshots"}">
+           <span class="mockup-chrome mockup-chrome--mini">
+             <span class="mockup-dot red"></span>
+             <span class="mockup-dot yellow"></span>
+             <span class="mockup-dot green"></span>
+           </span>
            <img src="${p.images[0].src}" alt="${p.title}" loading="lazy">
            <span class="gallery-badge">🖼 ${p.images.length}</span>
          </button>`
@@ -297,6 +302,7 @@ const lightboxCounter = document.getElementById("lightboxCounter");
 const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
+const lightboxUrl = document.getElementById("lightboxUrl");
 
 let galleryImages = [];
 let galleryIndex = 0;
@@ -316,6 +322,7 @@ function updateLightbox() {
   const caption = currentLang === "ar" ? img.captionAr : img.captionEn;
   lightboxImg.alt = caption;
   lightboxCaption.textContent = caption;
+  lightboxUrl.textContent = img.path || "";
   lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
   const multi = galleryImages.length > 1;
   lightboxPrev.style.display = multi ? "flex" : "none";

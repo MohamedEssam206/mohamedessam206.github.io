@@ -246,7 +246,17 @@
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
   <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
   <div class="lightbox-content">
-    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-stage">
+      <div class="mockup-frame">
+        <div class="mockup-chrome">
+          <span class="mockup-dot red"></span>
+          <span class="mockup-dot yellow"></span>
+          <span class="mockup-dot green"></span>
+          <span class="mockup-url" id="lightboxUrl"></span>
+        </div>
+        <img id="lightboxImg" src="" alt="">
+      </div>
+    </div>
     <p class="lightbox-caption" id="lightboxCaption"></p>
     <span class="lightbox-counter" id="lightboxCounter"></span>
   </div>
