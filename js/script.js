@@ -93,7 +93,15 @@ const projects = [
     tags: ["Laravel", "Firebase", "Real-time Tracking"],
     descEn: "Real-time service booking platform with two mobile apps and an admin dashboard. Live worker tracking, promo codes, reward points, custom fields for team requests, and mutual user/worker ratings.",
     descAr: "منصة حجز خدمات لحظية بتطبيقين موبايل ولوحة تحكم. تتبّع عمال لحظي، أكواد خصم، نقاط مكافآت، حقول مخصصة لطلبات الفرق، وتقييم متبادل بين المستخدم والعامل.",
-    link: "https://motah.nahrdev.com/"
+    link: "https://motah.nahrdev.com/",
+    images: [
+      { src: "assets/projects/motah/landing.jpg", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "motah.nahrdev.com" },
+      { src: "assets/projects/motah/login.png", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "motah.nahrdev.com/login" },
+      { src: "assets/projects/motah/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "motah.nahrdev.com/admin/home" },
+      { src: "assets/projects/motah/tickets.png", captionEn: "Service tickets", captionAr: "طلبات الخدمة", path: "motah.nahrdev.com/admin/ticket" },
+      { src: "assets/projects/motah/zone-create.jpg", captionEn: "Zone creation (map-based)", captionAr: "إنشاء منطقة خدمة (بالخريطة)", path: "motah.nahrdev.com/admin/zone/create" },
+      { src: "assets/projects/motah/complaints.png", captionEn: "Complaints management", captionAr: "إدارة الشكاوى", path: "motah.nahrdev.com/admin/complaint" }
+    ]
   },
   {
     title: "Iplace24",
