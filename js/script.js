@@ -1,6 +1,20 @@
 // ---- Data: projects (bilingual) ----
 const projects = [
   {
+    title: "Fixer",
+    tags: ["Laravel 12", "Passport", "Reverb", "Stripe", "LLM Agent"],
+    descEn: "Full-stack Laravel 12 Uber-style car-repair marketplace with a customer app, a mechanic app, and an admin dashboard on one backend — 20+ modules on a Repository/Service Layer architecture with isolated Passport guards. Real-time matching broadcasts each booking only to nearby mechanics offering the same service, with queued jobs expiring or reopening unanswered requests. Live status, chat, and notifications via Laravel Reverb with Firebase fallback, wallet & Stripe payments, OTP + TOTP 2FA, a multi-provider AI assistant (OpenAI, Anthropic, Gemini) on its own queue, and admin reports with Excel/PDF export.",
+    descAr: "منصة Laravel 12 متكاملة لصيانة السيارات بأسلوب Uber، بتطبيق للعميل وتطبيق للميكانيكي ولوحة تحكم أدمن على باك إند واحد — أكثر من 20 موديول بنمط Repository/Service Layer وحراس Passport منفصلين. محرك مطابقة لحظي يبعت كل حجز للميكانيكية القريبين اللي بيقدموا نفس الخدمة بس، مع Jobs بتنهي أو تعيد فتح الطلبات اللي محدش رد عليها. تحديثات حالة وشات وإشعارات لحظية عبر Laravel Reverb وFirebase كخط احتياطي، محفظة ومدفوعات Stripe، تحقق OTP وTOTP 2FA، مساعد ذكاء اصطناعي متعدد المزودين (OpenAI, Anthropic, Gemini) على Queue مستقل، وتقارير أدمن مع تصدير Excel/PDF.",
+    link: "https://flexr.nahrdev.net/",
+    images: [
+      { src: "assets/projects/fixer/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "flexr.nahrdev.net/admin/home" },
+      { src: "assets/projects/fixer/bookings.png", captionEn: "Booking lifecycle tracking", captionAr: "تتبّع دورة حياة الحجوزات", path: "flexr.nahrdev.net/admin/booking" },
+      { src: "assets/projects/fixer/reports.png", captionEn: "Reports & analytics", captionAr: "التقارير والتحليلات", path: "flexr.nahrdev.net/admin/report" },
+      { src: "assets/projects/fixer/mechanics.png", captionEn: "Mechanic management & bulk approvals", captionAr: "إدارة الميكانيكية والموافقات الجماعية", path: "flexr.nahrdev.net/admin/mechanic" },
+      { src: "assets/projects/fixer/ai-assistant.png", captionEn: "Multi-provider AI assistant settings", captionAr: "إعدادات مساعد الذكاء الاصطناعي متعدد المزودين", path: "flexr.nahrdev.net/admin/aiAssistant" }
+    ]
+  },
+  {
     title: "OctoBoss",
     tags: ["Laravel 12", "Passport", "Reverb", "Firebase FCM", "Wallet System"],
     descEn: "Full-stack Laravel 12 on-demand home-services marketplace with a customer app, a worker app, and an admin dashboard — kept isolated via dual Passport guards. Full ticket lifecycle with live GPS tracking and in-app chat, a worker wallet & paid-membership monetization system, and real-time updates via Laravel Reverb with Firebase push as fallback.",
