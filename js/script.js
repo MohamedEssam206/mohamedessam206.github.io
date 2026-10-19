@@ -3,6 +3,7 @@ const projects = [
   {
     title: "Fixer",
     tags: ["Laravel 12", "Passport", "Reverb", "Stripe", "LLM Agent"],
+    stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
     descEn: "Full-stack Laravel 12 Uber-style car-repair marketplace with a customer app, a mechanic app, and an admin dashboard on one backend — 20+ modules on a Repository/Service Layer architecture with isolated Passport guards. Real-time matching broadcasts each booking only to nearby mechanics offering the same service, with queued jobs expiring or reopening unanswered requests. Live status, chat, and notifications via Laravel Reverb with Firebase fallback, wallet & Stripe payments, OTP + TOTP 2FA, a multi-provider AI assistant (OpenAI, Anthropic, Gemini) on its own queue, and admin reports with Excel/PDF export.",
     descAr: "منصة Laravel 12 متكاملة لصيانة السيارات بأسلوب Uber، بتطبيق للعميل وتطبيق للميكانيكي ولوحة تحكم أدمن على باك إند واحد — أكثر من 20 موديول بنمط Repository/Service Layer وحراس Passport منفصلين. محرك مطابقة لحظي يبعت كل حجز للميكانيكية القريبين اللي بيقدموا نفس الخدمة بس، مع Jobs بتنهي أو تعيد فتح الطلبات اللي محدش رد عليها. تحديثات حالة وشات وإشعارات لحظية عبر Laravel Reverb وFirebase كخط احتياطي، محفظة ومدفوعات Stripe، تحقق OTP وTOTP 2FA، مساعد ذكاء اصطناعي متعدد المزودين (OpenAI, Anthropic, Gemini) على Queue مستقل، وتقارير أدمن مع تصدير Excel/PDF.",
     link: "https://flexr.nahrdev.net/",
@@ -17,6 +18,7 @@ const projects = [
   {
     title: "OctoBoss",
     tags: ["Laravel 12", "Passport", "Reverb", "Firebase FCM", "Wallet System"],
+    stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
     descEn: "Full-stack Laravel 12 on-demand home-services marketplace with a customer app, a worker app, and an admin dashboard — kept isolated via dual Passport guards. Full ticket lifecycle with live GPS tracking and in-app chat, a worker wallet & paid-membership monetization system, and real-time updates via Laravel Reverb with Firebase push as fallback.",
     descAr: "منصة Laravel 12 متكاملة لخدمات المنزل عند الطلب، بتطبيق للعميل وتطبيق للعامل ولوحة تحكم أدمن — مفصولين تمامًا بحارسي Passport. دورة حياة تذاكر كاملة مع تتبّع GPS لحظي وشات داخلي، نظام محفظة وعضويات مدفوعة للعمال، وتحديثات لحظية عبر Laravel Reverb وFirebase كخط احتياطي.",
     link: "https://octoboos.nahrdev.com/",
@@ -31,6 +33,7 @@ const projects = [
   {
     title: "Qarar",
     tags: ["Laravel 12", "Passport", "Reverb", "Agora", "MyFatoorah"],
+    stack: ["Laravel", "WebSockets", "MySQL"],
     descEn: "Full-stack Laravel 12 healthcare booking platform with a multilingual admin dashboard and REST API. Dynamic role & permission system, charity committee workflows, live video/voice consultations via Agora, MyFatoorah payments, and real-time chat via Laravel Reverb.",
     descAr: "منصة حجز مواعيد صحية متكاملة ببنية Laravel 12، بلوحة تحكم متعددة اللغات وREST API. نظام أدوار وصلاحيات ديناميكي، ورش عمل لجان الجمعيات الخيرية، استشارات فيديو وصوت لحظية عبر Agora، مدفوعات MyFatoorah، وشات لحظي عبر Laravel Reverb.",
     link: "https://qarar.nahrdev.com/",
@@ -45,6 +48,7 @@ const projects = [
   {
     title: "Rawnq",
     tags: ["Laravel", "Vue.js 3", "Multi-tenant", "Wallet"],
+    stack: ["Laravel", "Vue.js", "MySQL"],
     descEn: "Multi-vendor beauty services marketplace with 35+ independent modules. Wallet system, granular RBAC, multi-language/currency support, real-time scheduling, and multi-gateway payments (Stripe, PayPal, Razorpay, Kashier).",
     descAr: "ماركت بليس متعدد البائعين لخدمات التجميل بأكثر من 35 موديول مستقل. نظام محفظة إلكترونية، صلاحيات دقيقة (RBAC)، دعم متعدد اللغات والعملات، جدولة لحظية، ومدفوعات متعددة البوابات (Stripe, PayPal, Razorpay, Kashier).",
     link: "https://rawnq.nahrdev.com/",
@@ -60,6 +64,7 @@ const projects = [
   {
     title: "KUBA",
     tags: ["Laravel", "Repository Pattern", "Bilingual CMS"],
+    stack: ["Laravel", "MySQL"],
     descEn: "Delivery company website with a fully dynamic admin dashboard driving all front-end content. 18+ CRUD modules, bilingual JSON-based translatable fields, and auto-generated per-action permissions.",
     descAr: "موقع شركة شحن وتوصيل بلوحة تحكم ديناميكية بالكامل. أكثر من 18 موديول CRUD، محتوى ثنائي اللغة مبني على JSON، وصلاحيات مولّدة تلقائيًا لكل إجراء.",
     link: "https://kuba.nahrdev.com/",
@@ -75,6 +80,7 @@ const projects = [
   {
     title: "Book Iraq",
     tags: ["Laravel", "Vue.js", "Cron Jobs", "Payments"],
+    stack: ["Laravel", "Vue.js", "MySQL"],
     descEn: "Travel and tourism booking platform for hotels, flights, cars, taxis and attractions. Multi-language support, secure payments (Visa/PayPal/Apple Pay/Google Pay), and automated booking-expiration cron jobs.",
     descAr: "منصة حجز سياحة وسفر للفنادق والطيران والسيارات والتاكسي والمعالم السياحية. دعم متعدد اللغات، مدفوعات آمنة (Visa/PayPal/Apple Pay/Google Pay)، وCron Jobs تلقائية لانتهاء صلاحية الحجوزات.",
     link: "https://booking.nahrdev.com/",
@@ -89,6 +95,7 @@ const projects = [
   {
     title: "Trimly",
     tags: ["Laravel", "WebSockets", "Multi-app"],
+    stack: ["Laravel", "Vue.js", "WebSockets", "Firebase", "MySQL"],
     descEn: "Beauty services marketplace with a responsive website and two mobile apps (User & Freelancer). Real-time notifications, freelancer wallet system, subscription management, and a revenue analytics dashboard.",
     descAr: "ماركت بليس لخدمات التجميل بموقع متجاوب وتطبيقين موبايل (مستخدم وفريلانسر). إشعارات لحظية، محفظة إلكترونية للفريلانسرز، إدارة اشتراكات، ولوحة تحليلات أداء.",
     images: [
@@ -104,6 +111,7 @@ const projects = [
   {
     title: "MoveNow",
     tags: ["Laravel", "Stripe", "WebSockets", "Firebase"],
+    stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
     descEn: "Ride-sharing and delivery platform with a REST API for two mobile apps (User & Provider). Real-time trip management via WebSockets, Stripe payments, and provider onboarding with document verification.",
     descAr: "منصة نقل ركاب وتوصيل بـ REST API لتطبيقين (مستخدم ومزوّد خدمة). إدارة رحلات لحظية عبر WebSockets، مدفوعات Stripe، وتسجيل مزوّدي خدمة بتوثيق مستندات.",
     link: "https://movenow.nahrdev.com/",
@@ -119,6 +127,7 @@ const projects = [
   {
     title: "Nesba",
     tags: ["Laravel 10", "Socket.IO", "Redis", "Firebase FCM", "upayments"],
+    stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
     descEn: "Full-stack Laravel 10 e-learning platform organized by grade with video lessons and PDF materials, plus separate student and admin dashboards. Real-time chat via a custom Node.js/Socket.IO + Redis microservice, FCM push, multi-provider SMS OTP, and subscription/coupon management with the upayments gateway.",
     descAr: "منصة Laravel 10 متكاملة للتعليم الإلكتروني منظمة حسب الصف الدراسي بفيديوهات ومواد PDF، مع لوحتين منفصلتين للطالب والأدمن. شات لحظي عبر مايكروسيرفس Node.js/Socket.IO وRedis، إشعارات FCM، تحقق OTP عبر أكتر من مزوّد SMS، وإدارة اشتراكات وكوبونات ببوابة upayments.",
     link: "https://nessba.nahrdev.com/",
@@ -134,6 +143,7 @@ const projects = [
   {
     title: "Motah",
     tags: ["Laravel", "Firebase", "Real-time Tracking"],
+    stack: ["Laravel", "Firebase", "MySQL"],
     descEn: "Real-time service booking platform with two mobile apps and an admin dashboard. Live worker tracking, promo codes, reward points, custom fields for team requests, and mutual user/worker ratings.",
     descAr: "منصة حجز خدمات لحظية بتطبيقين موبايل ولوحة تحكم. تتبّع عمال لحظي، أكواد خصم، نقاط مكافآت، حقول مخصصة لطلبات الفرق، وتقييم متبادل بين المستخدم والعامل.",
     link: "https://motah.nahrdev.com/",
@@ -149,6 +159,7 @@ const projects = [
   {
     title: "HYDRO",
     tags: ["Laravel 12", "Modular Architecture", "RBAC", "RTL / i18n", "MySQL"],
+    stack: ["Laravel", "MySQL"],
     descEn: "Full-stack Laravel 12 multilingual CMS & admin dashboard for a hydro-services business, built with a modular architecture (17 self-contained modules) and custom RBAC permissions. Public bilingual (Arabic/English RTL) site covering services, projects, gallery, and careers, with JSON-based translatable content and quote-request/contact workflows.",
     descAr: "منصة CMS ولوحة تحكم Laravel 12 متكاملة ومتعددة اللغات لشركة خدمات هيدروليكية/معدنية، مبنية بمعمارية Modular (17 موديول مستقل) وصلاحيات RBAC مخصصة. موقع عام ثنائي اللغة (عربي/إنجليزي RTL) يغطي الخدمات والمشاريع والمعرض والوظائف، بمحتوى قابل للترجمة JSON-based وworkflows لطلبات عروض الأسعار والتواصل.",
     link: "https://hydro-metal.org/",
@@ -163,6 +174,7 @@ const projects = [
   {
     title: "Iplace24",
     tags: ["Laravel", "MySQL", "AJAX"],
+    stack: ["Laravel", "MySQL"],
     descEn: "Car maintenance platform with a web dashboard and two mobile apps (User & Vendor). Nearest service-station discovery, car rental during repair time, remote key drop-off, and secure payments.",
     descAr: "منصة صيانة سيارات بلوحة تحكم وتطبيقين (مستخدم ومزوّد خدمة). اكتشاف أقرب محطات الخدمة، تأجير سيارة وقت الصيانة، تسليم مفاتيح عن بُعد، ومدفوعات آمنة.",
     link: "https://Iplace24.nahrdev.com/",
@@ -178,6 +190,7 @@ const projects = [
   {
     title: "Wawan GYM",
     tags: ["CakePHP", "MySQL", "AJAX"],
+    stack: ["MySQL"],
     descEn: "Gym management dashboard for subscriptions, memberships, coaches, branches and activities, paired with a mobile app offering dynamic, PDF-exportable meal and workout plans for users and coaches.",
     descAr: "لوحة تحكم لإدارة صالة جيم (اشتراكات، عضويات، مدربين، فروع، أنشطة)، مع تطبيق موبايل بخطط غذائية وتمرينية ديناميكية قابلة للتصدير كـ PDF للمستخدمين والمدربين.",
     link: null
@@ -356,7 +369,7 @@ function renderProjects(filter) {
   projectsGrid.innerHTML = "";
   const filtered = filter === "all"
     ? projects
-    : projects.filter(p => p.tags.includes(filter));
+    : projects.filter(p => p.stack.includes(filter));
 
   filtered.forEach(p => {
     const desc = currentLang === "ar" ? p.descAr : p.descEn;
@@ -457,8 +470,8 @@ document.addEventListener("keydown", (e) => {
 
 function buildFilters() {
   const tagSet = new Set();
-  projects.forEach(p => p.tags.forEach(t => tagSet.add(t)));
-  const commonTags = ["Laravel", "Vue.js", "Vue.js 3", "WebSockets", "Firebase", "MySQL"].filter(t => tagSet.has(t));
+  projects.forEach(p => p.stack.forEach(t => tagSet.add(t)));
+  const commonTags = ["Laravel", "Vue.js", "WebSockets", "Firebase", "MySQL"].filter(t => tagSet.has(t));
 
   commonTags.forEach(tag => {
     const btn = document.createElement("button");
