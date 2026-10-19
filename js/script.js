@@ -48,7 +48,7 @@ const projects = [
   {
     title: "Rawnq",
     tags: ["Laravel", "Vue.js 3", "Multi-tenant", "Wallet"],
-    stack: ["Laravel", "Vue.js", "MySQL"],
+    stack: ["Laravel", "Vue.js", "WebSockets", "MySQL"],
     descEn: "Multi-vendor beauty services marketplace with 35+ independent modules. Wallet system, granular RBAC, multi-language/currency support, real-time scheduling, and multi-gateway payments (Stripe, PayPal, Razorpay, Kashier).",
     descAr: "ماركت بليس متعدد البائعين لخدمات التجميل بأكثر من 35 موديول مستقل. نظام محفظة إلكترونية، صلاحيات دقيقة (RBAC)، دعم متعدد اللغات والعملات، جدولة لحظية، ومدفوعات متعددة البوابات (Stripe, PayPal, Razorpay, Kashier).",
     link: "https://rawnq.nahrdev.com/",
@@ -143,7 +143,7 @@ const projects = [
   {
     title: "Motah",
     tags: ["Laravel", "Firebase", "Real-time Tracking"],
-    stack: ["Laravel", "Firebase", "MySQL"],
+    stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
     descEn: "Real-time service booking platform with two mobile apps and an admin dashboard. Live worker tracking, promo codes, reward points, custom fields for team requests, and mutual user/worker ratings.",
     descAr: "منصة حجز خدمات لحظية بتطبيقين موبايل ولوحة تحكم. تتبّع عمال لحظي، أكواد خصم، نقاط مكافآت، حقول مخصصة لطلبات الفرق، وتقييم متبادل بين المستخدم والعامل.",
     link: "https://motah.nahrdev.com/",
