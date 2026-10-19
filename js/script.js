@@ -8,6 +8,7 @@ const projects = [
     descAr: "منصة Laravel 12 متكاملة لصيانة السيارات بأسلوب Uber، بتطبيق للعميل وتطبيق للميكانيكي ولوحة تحكم أدمن على باك إند واحد — أكثر من 20 موديول بنمط Repository/Service Layer وحراس Passport منفصلين. محرك مطابقة لحظي يبعت كل حجز للميكانيكية القريبين اللي بيقدموا نفس الخدمة بس، مع Jobs بتنهي أو تعيد فتح الطلبات اللي محدش رد عليها. تحديثات حالة وشات وإشعارات لحظية عبر Laravel Reverb وFirebase كخط احتياطي، محفظة ومدفوعات Stripe، تحقق OTP وTOTP 2FA، مساعد ذكاء اصطناعي متعدد المزودين (OpenAI, Anthropic, Gemini) على Queue مستقل، وتقارير أدمن مع تصدير Excel/PDF.",
     link: "https://flexr.nahrdev.net/",
     images: [
+      { src: "assets/projects/fixer/login.png", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "flexr.nahrdev.net" },
       { src: "assets/projects/fixer/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "flexr.nahrdev.net/admin/home" },
       { src: "assets/projects/fixer/bookings.png", captionEn: "Booking lifecycle tracking", captionAr: "تتبّع دورة حياة الحجوزات", path: "flexr.nahrdev.net/admin/booking" },
       { src: "assets/projects/fixer/reports.png", captionEn: "Reports & analytics", captionAr: "التقارير والتحليلات", path: "flexr.nahrdev.net/admin/report" },
