@@ -24,7 +24,7 @@ const projects = [
     descAr: "منصة Laravel 12 متكاملة لخدمات المنزل عند الطلب، بتطبيق للعميل وتطبيق للعامل ولوحة تحكم أدمن — مفصولين تمامًا بحارسي Passport. دورة حياة تذاكر كاملة مع تتبّع GPS لحظي وشات داخلي، نظام محفظة وعضويات مدفوعة للعمال، وتحديثات لحظية عبر Laravel Reverb وFirebase كخط احتياطي.",
     link: "https://octoboos.nahrdev.com/",
     images: [
-      { src: "assets/projects/octoboss/landing.jpg", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "octoboos.nahrdev.com" },
+      { src: "assets/projects/octoboss/landing.jpg?v=2", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "octoboos.nahrdev.com" },
       { src: "assets/projects/octoboss/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "octoboos.nahrdev.com/login" },
       { src: "assets/projects/octoboss/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "octoboos.nahrdev.com/admin/home" },
       { src: "assets/projects/octoboss/tickets.png", captionEn: "Ticket lifecycle management", captionAr: "إدارة دورة حياة التذاكر", path: "octoboos.nahrdev.com/admin/ticket" },
