@@ -25,7 +25,7 @@ const projects = [
     link: "https://octoboos.nahrdev.com/",
     images: [
       { src: "assets/projects/octoboss/landing.jpg?v=2", captionEn: "Marketing landing page (full page)", captionAr: "الصفحة الرئيسية التسويقية (كاملة)", path: "octoboos.nahrdev.com" },
-      { src: "assets/projects/octoboss/login.jpg", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "octoboos.nahrdev.com/login" },
+      { src: "assets/projects/octoboss/login.jpg?v=2", captionEn: "Admin login", captionAr: "تسجيل دخول الأدمن", path: "octoboos.nahrdev.com/login" },
       { src: "assets/projects/octoboss/dashboard.png", captionEn: "Admin dashboard", captionAr: "لوحة تحكم الأدمن", path: "octoboos.nahrdev.com/admin/home" },
       { src: "assets/projects/octoboss/tickets.png", captionEn: "Ticket lifecycle management", captionAr: "إدارة دورة حياة التذاكر", path: "octoboos.nahrdev.com/admin/ticket" },
       { src: "assets/projects/octoboss/workers.png", captionEn: "Worker management", captionAr: "إدارة العمال", path: "octoboos.nahrdev.com/admin/worker" }
