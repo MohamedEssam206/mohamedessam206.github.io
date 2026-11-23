@@ -1,6 +1,21 @@
 // ---- Data: projects (bilingual) ----
 const projects = [
   {
+    title: "Hawa",
+    tags: ["PHP 8.3", "CodeIgniter 3", "Pusher", "Firebase FCM", "LLM Agent"],
+    stack: ["WebSockets", "Firebase", "MySQL"],
+    descEn: "Production multi-sided delivery marketplace with customer, store and rider apps and an admin dashboard on one PHP 8.3 / CodeIgniter 3 backend. A real-time dispatch engine over Pusher offers orders fairly to riders, with live GPS tracking and multi-order delivery. Includes an AI shopping assistant with tool calling (OpenAI, Anthropic, Gemini), geo-polygon delivery zones, store wallets and multi-gateway payments.",
+    descAr: "منصة توصيل متعددة الأطراف شغالة production، فيها تطبيق للعميل وتطبيق للمتجر وتطبيق للمندوب ولوحة تحكم أدمن، وكلهم على باك إند واحد بـ PHP 8.3 وCodeIgniter 3. محرك توزيع لحظي عبر Pusher بيعرض الطلبات على المناديب بعدل، مع تتبّع GPS لحظي وتوصيل أكتر من طلب في نفس الرحلة. وفيها مساعد تسوّق بالذكاء الاصطناعي بـ tool calling (OpenAI وAnthropic وGemini)، ومناطق توصيل بـ geo-polygon، ومحافظ للمتاجر، ودفع بأكتر من بوابة.",
+    link: "https://hawa.nahrdev.net/",
+    images: [
+      { src: "assets/projects/hawa/landing.jpg", captionEn: "Customer landing page (full page)", captionAr: "الصفحة الرئيسية للعملاء (كاملة)", path: "hawa.nahrdev.net" },
+      { src: "assets/projects/hawa/dashboard.jpg", captionEn: "Admin dashboard & order pipeline", captionAr: "لوحة تحكم الأدمن ومسار الطلبات", path: "hawa.nahrdev.net/admin/home" },
+      { src: "assets/projects/hawa/partners.jpg", captionEn: "Store (partner) management & settlement", captionAr: "إدارة المتاجر وتسوية مستحقاتها", path: "hawa.nahrdev.net/admin/partners" },
+      { src: "assets/projects/hawa/product-create.jpg", captionEn: "Bilingual product form with add-ons", captionAr: "فورم منتج بلغتين مع الإضافات", path: "hawa.nahrdev.net/admin/product/create-product" },
+      { src: "assets/projects/hawa/ai-assistant.jpg", captionEn: "Multi-provider AI assistant settings", captionAr: "إعدادات مساعد الذكاء الاصطناعي متعدد المزودين", path: "hawa.nahrdev.net/admin/ai-chat-settings" }
+    ]
+  },
+  {
     title: "Fixer",
     tags: ["Laravel 12", "Passport", "Reverb", "Stripe", "LLM Agent"],
     stack: ["Laravel", "WebSockets", "Firebase", "MySQL"],
